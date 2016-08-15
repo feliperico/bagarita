@@ -1,0 +1,19 @@
+apply plugin: 'war'
+
+ext {
+    springSecVersion = '3.2.5.RELEASE'
+    jacksonVersion = '2.8.1'
+}
+
+dependencies {
+
+    compile group: 'org.springframework', name: 'spring-core', version: springVersion
+    compile group: 'org.springframework', name: 'spring-web', version: springVersion
+    compile group: 'org.springframework', name: 'spring-webmvc', version: springVersion
+
+    compile group: 'com.fasterxml.jackson.core', name: 'jackson-core', version: jacksonVersion
+    compile group: 'com.fasterxml.jackson.core', name: 'jackson-databind', version: jacksonVersion
+    compile group: 'com.fasterxml.jackson.datatype', name: 'jackson-datatype-jsr310', version: jacksonVersion
+
+    compile group: 'javax.servlet', name: 'javax.servlet-api', version: '3.1.0'
+}
