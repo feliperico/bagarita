@@ -2,6 +2,8 @@ package br.frico.bagarita.config;
 
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.PropertySource;
+import org.springframework.context.annotation.PropertySources;
 
 /**
  * Root Configuration
@@ -9,8 +11,8 @@ import org.springframework.context.annotation.Configuration;
  */
 @Configuration
 @ComponentScan("br.frico.bagarita.config")
-//@PropertySources({
-//        @PropertySource(value = "classpath:application.properties")
-//})
+@PropertySources({
+        @PropertySource(value = "classpath:application.properties")
+})
 public class RootConfig {
 }

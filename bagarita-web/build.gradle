@@ -8,8 +8,6 @@ ext {
 dependencies {
 
     compile project(":bagarita-domain")
-    compile group: 'org.springframework', name: 'spring-core', version: springVersion
-    compile group: 'org.springframework', name: 'spring-web', version: springVersion
     compile group: 'org.springframework', name: 'spring-webmvc', version: springVersion
 
     compile group: 'com.fasterxml.jackson.core', name: 'jackson-core', version: jacksonVersion
