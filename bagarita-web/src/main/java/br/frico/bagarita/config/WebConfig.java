@@ -1,4 +1,4 @@
-package br.frico.bagarita.web.config;
+package br.frico.bagarita.config;
 
 import br.frico.bagarita.web.controller.CustomObjectMapper;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -20,7 +20,7 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter
  */
 @Configuration
 @EnableWebMvc
-//@ComponentScan("br.frico.bagarita.web.controller")
+@ComponentScan("br.frico.bagarita.web.controller")
 public class WebConfig extends WebMvcConfigurerAdapter {
 
     @Autowired

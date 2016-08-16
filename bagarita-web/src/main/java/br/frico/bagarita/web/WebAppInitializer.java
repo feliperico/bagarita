@@ -1,6 +1,6 @@
 package br.frico.bagarita.web;
 
-import br.frico.bagarita.web.config.RootConfig;
+import br.frico.bagarita.config.RootConfig;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer;

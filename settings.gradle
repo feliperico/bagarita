@@ -1,3 +1,4 @@
 rootProject.name = 'bagarita'
 include 'bagarita-web'
+include 'bagarita-domain'
 

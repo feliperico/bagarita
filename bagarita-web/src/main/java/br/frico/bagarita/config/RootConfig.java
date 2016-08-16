@@ -1,4 +1,4 @@
-package br.frico.bagarita.web.config;
+package br.frico.bagarita.config;
 
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
@@ -8,7 +8,7 @@ import org.springframework.context.annotation.Configuration;
  * Created by Felipe Rico on 8/15/2016.
  */
 @Configuration
-@ComponentScan("br.frico.bagarita.web")
+@ComponentScan("br.frico.bagarita.config")
 //@PropertySources({
 //        @PropertySource(value = "classpath:application.properties")
 //})

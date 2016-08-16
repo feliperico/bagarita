@@ -1,0 +1,9 @@
+apply plugin: 'java'
+
+ext {
+    hibernateVersion = '5.2.2.Final'
+}
+
+dependencies {
+    compile group: 'org.hibernate', name: 'hibernate-core', version: hibernateVersion
+}
