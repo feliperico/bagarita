@@ -1,0 +1,11 @@
+CREATE TABLE bag_subject
+(
+  id BIGINT PRIMARY KEY NOT NULL,
+  name VARCHAR(120) NOT NULL,
+  description VARCHAR(255),
+  discipline_id BIGINT NOT NULL
+);
+
+ALTER TABLE bag_subject ADD CONSTRAINT FK_SUBJECT_DISCIPLINE FOREIGN KEY (discipline_id) REFERENCES bag_discipline (id);
+
+CREATE INDEX IDX_SUBJECT_DISCIPLINE ON bag_subject USING BTREE (discipline_id);
