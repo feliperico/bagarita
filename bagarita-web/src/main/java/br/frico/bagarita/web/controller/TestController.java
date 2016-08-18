@@ -1,7 +1,7 @@
 package br.frico.bagarita.web.controller;
 
-import br.frico.bagarita.domain.Discipline;
-import br.frico.bagarita.domain.repos.DisciplineRepository;
+import br.frico.bagarita.domain.question.Discipline;
+import br.frico.bagarita.domain.repos.question.DisciplineRepository;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;

@@ -1,6 +1,6 @@
-package br.frico.bagarita.domain.repos;
+package br.frico.bagarita.domain.repos.question;
 
-import br.frico.bagarita.domain.Discipline;
+import br.frico.bagarita.domain.question.Discipline;
 import org.springframework.data.repository.PagingAndSortingRepository;
 import org.springframework.stereotype.Repository;
 

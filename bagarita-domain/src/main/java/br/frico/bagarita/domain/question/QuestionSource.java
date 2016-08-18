@@ -1,32 +1,25 @@
-package br.frico.bagarita.domain;
+package br.frico.bagarita.domain.question;
 
 import javax.persistence.*;
 
 /**
- * Represents a discipline subject
+ * Represents a source of questions.
  *
  * Created by Felipe Rico on 8/17/2016.
  */
 @Entity
-@Table(name = "BAG_SUBJECT")
-public class Subject {
+@Table(name = "BAG_QUESTION_SOURCE")
+public class QuestionSource {
 
     @Id
     @GeneratedValue(generator = "sequence", strategy = GenerationType.SEQUENCE)
     @SequenceGenerator(name = "sequence", sequenceName = "BAG_SEQUENCE")
     private Long id;
 
-    @Column(length = 120, nullable = false)
+    @Column(length = 100, nullable = false, unique = true)
     private String name;
 
-    @Column(length = 255)
     private String description;
-
-    @ManyToOne
-    @JoinColumn(name = "DISCIPLINE_ID", nullable = false)
-    private Discipline discipline;
-
-    public Subject() {}
 
     public Long getId() {
         return id;
@@ -50,13 +43,5 @@ public class Subject {
 
     public void setDescription(String description) {
         this.description = description;
-    }
-
-    public Discipline getDiscipline() {
-        return discipline;
-    }
-
-    public void setDiscipline(Discipline discipline) {
-        this.discipline = discipline;
     }
 }

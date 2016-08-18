@@ -1,4 +1,4 @@
-package br.frico.bagarita.domain;
+package br.frico.bagarita.domain.question;
 
 import javax.persistence.*;
 
