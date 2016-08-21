@@ -77,6 +77,7 @@ public class HtmlConversionServiceImpl {
         if (StringUtils.isNotBlank(htmlInput)) {
             // Parsea o input HTML
             Document htmlDoc = Jsoup.parse(htmlInput, baseURI);
+            //htmlDoc.outputSettings().charset("ASCII");
             Elements mathElems = htmlDoc.select(".math-tex");
             boolean hasMath = !mathElems.isEmpty();
             Map<String, String> mathMap = null;

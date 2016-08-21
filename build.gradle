@@ -7,10 +7,11 @@ subprojects {
     targetCompatibility = 1.8
 
     repositories {
+        mavenLocal()
         mavenCentral()
-        maven {
-            url "http://www2.ph.ed.ac.uk/maven2"
-        }
+//        maven {
+//            url "http://www2.ph.ed.ac.uk/maven2"
+//        }
     }
 
     ext {

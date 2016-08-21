@@ -20,7 +20,7 @@ public class HtmConversionServiceImplTest {
         WordprocessingMLPackage wmlPackage = WordprocessingMLPackage.createPackage();
         htmlConversionService.addHTMLInput2Docx(htmlInput, wmlPackage);
 
-        File file = new File("C:\\Users\\lc43092\\Documents\\test.docx");
+        File file = new File("/home/felipe/test.docx");
         wmlPackage.save(file);
     }
 }
